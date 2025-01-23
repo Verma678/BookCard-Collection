@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import ProtectedRoutes from "../ProtectedRoutes";
 import "../index.css";
 
 function Login() {

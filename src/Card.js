@@ -2,16 +2,16 @@ import { Link } from "react-router-dom";
 import LikeImage from "./like.png";
 import DislikeImage from "./dislike.png";
 import Country from "./kyrgyzstan.png";
-import img1 from "./img1.png";
-import img2 from "./img2.png";
-import img3 from "./img3.png";
-import img4 from "./img4.png";
-import img5 from "./img5.png";
-import img6 from "./img6.png";
-import img7 from "./img7.png";
-import img8 from "./img8.png";
-import img9 from "./img9.png";
-import img10 from "./img10.png";
+import img1 from "./assets/img1.png";
+import img2 from "./assets/img2.png";
+import img3 from "./assets/img3.png";
+import img4 from "./assets/img4.png";
+import img5 from "./assets/img5.png";
+import img6 from "./assets/img6.png";
+import img7 from "./assets/img7.png";
+import img8 from "./assets/img8.png";
+import img9 from "./assets/img9.png";
+import img10 from "./assets/img10.png";
 import "./index.css";
 
 function Card(props) {
