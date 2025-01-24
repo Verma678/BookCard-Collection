@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
+// import Card from "./Card";
 import Card from "./Card";
-import "./index.css";
+import "../index.css";
 import Loader from "./Loader";
 import Navbar from "./Navbar";
 import { useNavigate } from "react-router-dom";

@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import Book_image from "./assets/book_img.jpg";
+import Book_image from "../assets/book_img.jpg";
 import Loader from "./Loader";
-import "./index.css";
+import "../index.css";
 
 function Bookcontent() {
   const [book, setBook] = useState([]);

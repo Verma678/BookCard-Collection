@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Home";
-import Bookcontent from "./Bookcontent";
-import Search_results from "./Search_results";
+import Home from "./components/Home";
+import Bookcontent from "./components/Bookcontent";
+import Search_results from "./components/Search_results";
 import LoginPage from "./components/LoginPage";
-import SignUp from "./SignUp";
-import ProtectedRoute from "./ProtectedRoutes";
-import IrreversibleSignIn from "./IrreversibleSignIn";
+import SignUp from "./components/SignUp";
+import ProtectedRoute from "./components/ProtectedRoutes";
+import IrreversibleSignIn from "./components/IrreversibleSignIn";
 import "./index.css";
 
 function Main() {

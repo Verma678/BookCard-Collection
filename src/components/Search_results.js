@@ -1,4 +1,4 @@
-import Book_image from "./assets/book_img.jpg";
+import Book_image from "../assets/book_img.jpg";
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 
