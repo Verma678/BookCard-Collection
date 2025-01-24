@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import LikeImage from "./like.png";
-import DislikeImage from "./dislike.png";
-import Country from "./kyrgyzstan.png";
+import LikeImage from "./assets/like.png";
+import DislikeImage from "./assets/dislike.png";
+import Country from "./assets/kyrgyzstan.png";
 import img1 from "./assets/img1.png";
 import img2 from "./assets/img2.png";
 import img3 from "./assets/img3.png";

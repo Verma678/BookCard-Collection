@@ -1,10 +1,11 @@
-import Book_image from "./book_img.jpg";
+import Book_image from "./assets/book_img.jpg";
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 function Search_results() {
   const [postData, setPostData] = useState([]);
   const location = useLocation();
+  const [page, setPage] = useState(1);
   const query = new URLSearchParams(location.search).get("query");
   console.log(query);
   useEffect(() => {
@@ -13,11 +14,26 @@ function Search_results() {
         `https://dummyjson.com/posts/search?q=${query}`
       );
       const data = await response.json();
-      setPostData(data.posts);
+      setPostData((prev) => [...prev, ...data.posts]);
     }
     handleInput();
-  }, [query]);
+  }, [query, page]);
 
+  const handleScrolling = () => {
+    if (
+      window.innerHeight + document.documentElement.scrollTop + 1 >=
+      document.documentElement.scrollHeight
+    ) {
+      setPage((prev) => prev + 1);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScrolling);
+
+    return () => {
+      window.removeEventListener("scroll", handleScrolling);
+    };
+  });
   return (
     <div className="search-result">
       {postData.map((book, index) => {

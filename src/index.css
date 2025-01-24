@@ -18,7 +18,8 @@ body {
   width: 100vw;
   grid-template-columns: repeat(3, 1fr);
   gap: 0px 0px;
-  padding: 100px;
+  padding: 80px;
+  padding-bottom: 0px;
   margin-left: 50px;
 }
 
@@ -333,4 +334,198 @@ body {
 
 .gender-label {
   margin-right: 10px;
+}
+
+.pagination {
+  display: flex;
+  gap: 20px;
+  width: 100vw;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.button-style {
+  height: 50px;
+  width: 50px;
+  border: 1px solid #ccc;
+  background-color: gray;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.dots {
+  font-size: 40px;
+}
+
+.highlight {
+  background-color: rgba(0, 174, 255, 0.8);
+}
+
+/* Responsiveness starts */
+
+@media (max-width: 1200px) {
+  .book-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px;
+    margin-left: 20px;
+  }
+  .book-card {
+    height: 400px;
+    width: 90%;
+    margin: 20px auto;
+  }
+  #box1,
+  #box2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .book-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    margin-left: 0;
+  }
+  .book-card {
+    height: auto;
+    width: 100%;
+    margin: 10px 0;
+  }
+  #box1,
+  #box2 {
+    height: auto;
+    padding: 20px;
+  }
+  .Login-card,
+  .signUpForm {
+    width: 90%;
+    padding: 20px;
+  }
+  .login-form input,
+  .form-structure input {
+    width: 100%;
+    padding: 8px;
+  }
+  .login-form button,
+  .signUpForm button {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .book-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .book-card {
+    height: auto;
+    margin: 10px;
+  }
+  .coin {
+    width: 40px;
+    height: 40px;
+  }
+  .Login-card h2,
+  .signUpForm h2 {
+    font-size: 1.5rem;
+  }
+  .login-form label,
+  .form-structure label {
+    font-size: 1rem;
+  }
+  .login-form input,
+  .form-structure input {
+    font-size: 0.9rem;
+  }
+  .login-form button,
+  .signUpForm button {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 0;
+  }
+
+  .button-style {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    width: auto;
+    height: auto;
+  }
+
+  .dots {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .pagination {
+    gap: 5px;
+  }
+
+  .button-style {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .signUpForm {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-structure {
+    padding: 10px;
+  }
+
+  .form-structure input,
+  .form-structure select {
+    width: 100%;
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  .form-structure button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .signUpForm {
+    padding: 10px;
+  }
+
+  .form-structure input,
+  .form-structure select {
+    font-size: 0.9rem;
+    padding: 6px;
+  }
+
+  .form-structure button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  label {
+    font-size: 0.8rem;
+  }
 }
