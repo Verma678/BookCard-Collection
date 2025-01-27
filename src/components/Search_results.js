@@ -1,6 +1,7 @@
 import Book_image from "../assets/book_img.jpg";
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
+import Navbar from "./Navbar";
 
 function Search_results() {
   const [postData, setPostData] = useState([]);
@@ -36,6 +37,7 @@ function Search_results() {
   });
   return (
     <div className="search-result">
+      <Navbar />
       {postData.map((book, index) => {
         return (
           <Link to={`/card/${book.id}`}>

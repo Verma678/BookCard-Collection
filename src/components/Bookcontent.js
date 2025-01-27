@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import Book_image from "../assets/book_img.jpg";
 import Loader from "./Loader";
 import "../index.css";
+import Navbar from "./Navbar";
 
 function Bookcontent() {
   const [book, setBook] = useState([]);
@@ -25,11 +26,11 @@ function Bookcontent() {
 
   return (
     <div>
+      <Navbar />
       {loading ? (
         <Loader />
       ) : (
         <div className="book-info single-card">
-          <button className="update-post-button">Edit Post</button>
           <img
             src={Book_image}
             alt="book_detail"
